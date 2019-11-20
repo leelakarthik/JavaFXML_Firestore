@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFx8.jnlp">
+  <information>
+    <title>loader</title>
+    <vendor>Unknown</vendor>
+    <description>JavaFx8</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaFx8.jar" size="430255" download="eager" />
+    <jar href="activation.jar" size="55147" download="eager" />
+    <jar href="api-common-1.7.0.jar" size="44558" download="eager" />
+    <jar href="auto-value-1.4.jar" size="1565588" download="eager" />
+    <jar href="commons-codec-1.10.jar" size="284184" download="eager" />
+    <jar href="commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="error_prone_annotations-2.1.2.jar" size="12142" download="eager" />
+    <jar href="firebase-admin-6.8.0.jar" size="778315" download="eager" />
+    <jar href="gax-1.30.0.jar" size="263355" download="eager" />
+    <jar href="gax-grpc-1.30.0.jar" size="99043" download="eager" />
+    <jar href="gax-httpjson-0.47.0.jar" size="59796" download="eager" />
+    <jar href="google-api-client-1.25.0.jar" size="204013" download="eager" />
+    <jar href="google-api-client-gson-1.25.0.jar" size="2662" download="eager" />
+    <jar href="google-api-services-storage-v1-rev135-1.24.1.jar" size="131667" download="eager" />
+    <jar href="google-auth-library-credentials-0.11.0.jar" size="5696" download="eager" />
+    <jar href="google-auth-library-oauth2-http-0.11.0.jar" size="74799" download="eager" />
+    <jar href="google-cloud-core-1.43.0.jar" size="119890" download="eager" />
+    <jar href="google-cloud-core-grpc-1.43.0.jar" size="10352" download="eager" />
+    <jar href="google-cloud-core-http-1.43.0.jar" size="15254" download="eager" />
+    <jar href="google-cloud-firestore-0.61.0-beta.jar" size="248545" download="eager" />
+    <jar href="google-cloud-storage-1.43.0.jar" size="260659" download="eager" />
+    <jar href="google-http-client-1.25.0.jar" size="390709" download="eager" />
+    <jar href="google-http-client-appengine-1.24.1.jar" size="15602" download="eager" />
+    <jar href="google-http-client-gson-1.25.0.jar" size="8572" download="eager" />
+    <jar href="google-http-client-jackson-1.24.1.jar" size="6348" download="eager" />
+    <jar href="google-http-client-jackson2-1.25.0.jar" size="6735" download="eager" />
+    <jar href="google-oauth-client-1.25.0.jar" size="63084" download="eager" />
+    <jar href="grpc-auth-1.13.1.jar" size="13400" download="eager" />
+    <jar href="grpc-context-1.13.1.jar" size="28521" download="eager" />
+    <jar href="grpc-core-1.13.1.jar" size="685407" download="eager" />
+    <jar href="grpc-netty-shaded-1.13.1.jar" size="6234830" download="eager" />
+    <jar href="grpc-protobuf-1.13.1.jar" size="4870" download="eager" />
+    <jar href="grpc-protobuf-lite-1.13.1.jar" size="8187" download="eager" />
+    <jar href="grpc-stub-1.13.1.jar" size="38874" download="eager" />
+    <jar href="gson-2.1.jar" size="180110" download="eager" />
+    <jar href="guava-20.0.jar" size="2442625" download="eager" />
+    <jar href="httpclient-4.5.5.jar" size="766123" download="eager" />
+    <jar href="httpcore-4.4.9.jar" size="325500" download="eager" />
+    <jar href="j2objc-annotations-1.1.jar" size="8782" download="eager" />
+    <jar href="jackson-core-2.9.6.jar" size="323848" download="eager" />
+    <jar href="jackson-core-asl-1.9.11.jar" size="232131" download="eager" />
+    <jar href="jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="joda-time-2.9.2.jar" size="625596" download="eager" />
+    <jar href="jsr305-3.0.2.jar" size="19936" download="eager" />
+    <jar href="mail.jar" size="521000" download="eager" />
+    <jar href="mysql-connector-java-8.0.15.jar" size="2134905" download="eager" />
+    <jar href="netty-buffer-4.1.22.Final.jar" size="270720" download="eager" />
+    <jar href="netty-codec-4.1.22.Final.jar" size="316316" download="eager" />
+    <jar href="netty-codec-http-4.1.22.Final.jar" size="562559" download="eager" />
+    <jar href="netty-common-4.1.22.Final.jar" size="575748" download="eager" />
+    <jar href="netty-handler-4.1.22.Final.jar" size="374389" download="eager" />
+    <jar href="netty-resolver-4.1.22.Final.jar" size="32276" download="eager" />
+    <jar href="netty-transport-4.1.22.Final.jar" size="456605" download="eager" />
+    <jar href="opencensus-api-0.15.0.jar" size="236698" download="eager" />
+    <jar href="opencensus-contrib-grpc-metrics-0.12.3.jar" size="11177" download="eager" />
+    <jar href="opencensus-contrib-grpc-util-0.15.0.jar" size="4269" download="eager" />
+    <jar href="opencensus-contrib-http-util-0.15.0.jar" size="9404" download="eager" />
+    <jar href="proto-google-cloud-firestore-v1beta1-0.26.0.jar" size="758301" download="eager" />
+    <jar href="proto-google-common-protos-1.12.0.jar" size="1200130" download="eager" />
+    <jar href="proto-google-iam-v1-0.12.0.jar" size="112431" download="eager" />
+    <jar href="protobuf-java-3.6.0.jar" size="1421320" download="eager" />
+    <jar href="protobuf-java-util-3.6.0.jar" size="68837" download="eager" />
+    <jar href="slf4j-api-1.7.25.jar" size="41203" download="eager" />
+    <jar href="threetenbp-1.3.3.jar" size="511401" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="858" height="589" main-class="Loader"  name="JavaFx8" />
+  <update check="background"/>
+</jnlp>

@@ -1,0 +1,18 @@
+.jfx-text-field, .jfx-password-field, .jfx-text-area{
+    -fx-prompt-text-fill: #373737;
+	-fx-background-color: #ffce00;
+}
+.jfx-combo-box,.jfx-combo-box.label{
+    -jfx-focus-color: #ffce00;
+    -jfx-unfocus-color: #373737;
+    -fx-background-color: #ffce00;
+    -fx-font-weight: bold;
+}
+.jfx-radio-button{
+    -fx-selected-color: #ffce00;
+    -fx-text-fill: #ffffff;
+    -fx-unselected-color: #373737;
+}
+.jfx-button{
+-fx-background-color: #373737;
+}

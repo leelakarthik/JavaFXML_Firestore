@@ -1,0 +1,13 @@
+.jfx-button{
+-fx-background-radius: 30 0 0 30;
+-fx-background-color : #373737;
+}
+.jfx-button1{
+-fx-background-color : #373737;
+-fx-background-radius: 0 0 0 0;
+}
+.jfx-text-field
+ {
+    -fx-prompt-text-fill: #373737;
+	-fx-background-color: #ffce00;
+}

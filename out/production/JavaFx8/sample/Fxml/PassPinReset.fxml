@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PassPane" prefHeight="589.0" prefWidth="858.0" style="-fx-background-color: #373737;" stylesheets="@../CSS/Style" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PasswordResetControler">
+   <JFXRadioButton fx:id="NewPassUnameRadio" layoutX="301.0" layoutY="85.0" onAction="#nameRadio" selected="true" text="Username">
+      <font>
+         <Font size="14.0" />
+      </font>
+      <toggleGroup>
+         <ToggleGroup fx:id="PassSelectRadio" />
+      </toggleGroup>
+   </JFXRadioButton>
+   <JFXRadioButton fx:id="NewPassCardNoRadio" layoutX="450.0" layoutY="85.0" onAction="#cardRadio" text="Card Number" toggleGroup="$PassSelectRadio">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </JFXRadioButton>
+   <JFXTextField fx:id="NewPassUnameTextField" alignment="CENTER" focusColor="#ffce00" labelFloat="true" layoutX="295.0" layoutY="119.0" prefHeight="31.0" prefWidth="267.0" promptText="Enter Username" unFocusColor="#373737">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXTextField>
+   <Label layoutX="296.0" layoutY="167.0" text="How do you want to reset your password??" textFill="WHITE">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <JFXRadioButton fx:id="NewPassMobileRadio" layoutX="296.0" layoutY="207.0" onAction="#mobileRadio" selected="true" text="Mobile Number">
+      <font>
+         <Font size="14.0" />
+      </font>
+      <toggleGroup>
+         <ToggleGroup fx:id="PassRadio" />
+      </toggleGroup>
+   </JFXRadioButton>
+   <JFXRadioButton fx:id="NewPassEmailRadio" layoutX="483.0" layoutY="207.0" onAction="#emailRadio" text="Email ID" toggleGroup="$PassRadio">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </JFXRadioButton>
+   <JFXTextField fx:id="Mobile_Email_TextField" alignment="CENTER" focusColor="#ffce00" labelFloat="true" layoutX="296.0" layoutY="245.0" prefHeight="31.0" prefWidth="267.0" promptText="Enter Mobile Number" unFocusColor="#373737">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXTextField>
+   <JFXButton fx:id="sendVerifyCode" buttonType="RAISED" layoutX="296.0" layoutY="304.0" onAction="#sendVerifyCodeAction" prefHeight="31.0" prefWidth="267.0" ripplerFill="#ffce00" text="Send Verification Code" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXButton>
+   <JFXTextField fx:id="verifyCodeTextField" alignment="CENTER" focusColor="#ffce00" labelFloat="true" layoutX="295.0" layoutY="368.0" prefHeight="31.0" prefWidth="267.0" promptText="Enter Verification Code" unFocusColor="#373737">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXTextField>
+   <JFXButton fx:id="verifyCode" buttonType="RAISED" layoutX="295.0" layoutY="426.0" onAction="#verifyCodeAction" prefHeight="31.0" prefWidth="267.0" ripplerFill="#ffce00" text="Verify Code" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXButton>
+   <Label alignment="CENTER" layoutX="296.0" layoutY="44.0" prefHeight="25.0" prefWidth="267.0" text="Password Reset Page" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+   <JFXButton fx:id="newPassBackButton" buttonType="RAISED" layoutX="296.0" layoutY="476.0" onAction="#newPassBackButton" prefHeight="31.0" prefWidth="267.0" ripplerFill="#ffce00" text="Back" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXButton>
+   <AnchorPane fx:id="setNewPasswordPane" layoutX="276.0" layoutY="49.0" prefHeight="470.0" prefWidth="307.0" style="-fx-background-color: #373737;" visible="false">
+      <ImageView fitHeight="55.0" fitWidth="71.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/IconL.png" />
+         </image>
+      </ImageView>
+      <JFXPasswordField fx:id="newPassField" focusColor="#ffce00" labelFloat="true" layoutX="58.0" layoutY="151.0" prefHeight="25.0" prefWidth="197.0" promptText="Enter new password" unFocusColor="#373737">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="reNewPassField" focusColor="#ffce00" labelFloat="true" layoutX="58.0" layoutY="199.0" prefHeight="25.0" prefWidth="197.0" promptText="one more time" unFocusColor="#373737">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXTextField fx:id="reNewTextField" labelFloat="true" layoutX="58.0" layoutY="144.0" prefHeight="25.0" prefWidth="197.0" promptText="one more time" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="SetButton" buttonType="RAISED" layoutX="58.0" layoutY="261.0" onAction="#SetButtonAction" prefHeight="25.0" prefWidth="83.0" ripplerFill="#ffce00" text="Set" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="cancelButton" buttonType="RAISED" layoutX="174.0" layoutY="261.0" onAction="#cancelButtonAction" prefHeight="25.0" prefWidth="79.0" ripplerFill="#ffce00" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="36.0" prefHeight="25.0" prefWidth="154.0" text="New Password Page" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+</AnchorPane>

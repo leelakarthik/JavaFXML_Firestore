@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="JavaFx8">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaFx8</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Loader" />
+        <option name="description" value="" />
+        <option name="height" value="589" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="exe" />
+        <option name="title" value="loader" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+        <option name="width" value="858" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="JavaFx8.jar">
+        <element id="module-output" name="JavaFx8" />
+        <element id="library" level="project" name="lib" />
+        <element id="dir-copy" path="$PROJECT_DIR$/Resources" />
+      </element>
+    </root>
+  </artifact>
+</component>

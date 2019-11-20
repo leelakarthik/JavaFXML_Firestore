@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUpController">
+    <AnchorPane maxHeight="589" maxWidth="858" minHeight="589" minWidth="858" prefHeight="589.0" prefWidth="858.0" style="-fx-background-color: #373737;" stylesheets="@../CSS/Style">
+        <JFXTextField fx:id="Sname" focusColor="#ffce00" labelFloat="true" layoutX="247.0" layoutY="50.0" prefHeight="31.0" prefWidth="216.0" promptText="Enter Name" unFocusColor="#373737">
+            <font>
+                <Font size="15.0" />
+            </font>
+         <tooltip>
+            <Tooltip autoHide="true" text="Enter Name" />
+         </tooltip>
+        </JFXTextField>
+      <JFXTextField fx:id="Sfname" focusColor="#ffce00" labelFloat="true" layoutX="247.0" layoutY="104.0" prefHeight="31.0" prefWidth="216.0" promptText="Enter Father Name" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" text="Enter Father Name" />
+         </tooltip>
+      </JFXTextField>
+      <JFXDatePicker fx:id="Sdate" defaultColor="#ffce00" layoutX="247.0" layoutY="162.0" prefHeight="31.0" prefWidth="216.0" promptText="Enter Date_Of_Birth">
+         <tooltip>
+            <Tooltip text="Enter Date_Of_Birth" />
+         </tooltip></JFXDatePicker>
+      <JFXRadioButton fx:id="Smale" layoutX="247.0" layoutY="217.0" text="Male" textFill="#373737" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="Sfemale" layoutX="377.0" layoutY="217.0" prefHeight="21.0" prefWidth="86.0" text="Female" textFill="#373737" toggleGroup="$Gender" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXTextField fx:id="Semail" focusColor="#ffce00" labelFloat="true" layoutX="247.0" layoutY="257.0" prefHeight="31.0" prefWidth="216.0" promptText="Enter Email Id" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" text="Enter Email Id" />
+         </tooltip>
+      </JFXTextField>
+      <JFXRadioButton fx:id="Ssingle" layoutX="247.0" layoutY="305.0" text="Single" textFill="#373737" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="MaritalStatus" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="Smarried" layoutX="377.0" layoutY="305.0" prefHeight="21.0" prefWidth="86.0" text="Married" textFill="#373737" toggleGroup="$MaritalStatus" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXTextArea fx:id="Saddress" focusColor="#ffce00" labelFloat="true" layoutX="247.0" layoutY="342.0" prefHeight="73.0" prefWidth="216.0" promptText="Enter Address" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" text="Enter Address" />
+         </tooltip>
+      </JFXTextArea>
+      <JFXTextField fx:id="Scity" focusColor="#ffce00" labelFloat="true" layoutX="247.0" layoutY="429.0" prefHeight="31.0" prefWidth="216.0" promptText="Enter City" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Enter City" />
+         </tooltip>
+      </JFXTextField>
+      <JFXTextField fx:id="Spincode" focusColor="#ffce00" labelFloat="true" layoutX="246.0" layoutY="476.0" prefHeight="31.0" prefWidth="216.0" promptText="Enter Pincode" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" text="Enter Pincode" />
+         </tooltip>
+      </JFXTextField>
+      <JFXTextField fx:id="Smobilenumber" focusColor="#ffce00" labelFloat="true" layoutX="247.0" layoutY="523.0" prefHeight="31.0" prefWidth="216.0" promptText="Enter Mobile Number" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+         <tooltip>
+            <Tooltip autoHide="true" text="Enter Mobile Number" />
+         </tooltip>
+      </JFXTextField>
+      <JFXTextField fx:id="Spannumber" focusColor="#ffce00" labelFloat="true" layoutX="577.0" layoutY="50.0" prefHeight="31.0" prefWidth="216.0" promptText="Enter Pan Number" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" text="Enter Pan Number" />
+         </tooltip>
+      </JFXTextField>
+      <JFXTextField fx:id="Saadharnumber" focusColor="#ffce00" labelFloat="true" layoutX="577.0" layoutY="102.0" prefHeight="31.0" prefWidth="216.0" promptText="Enter Aadhar Number" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" text="Enter Aadhar Number" />
+         </tooltip>
+      </JFXTextField>
+      <JFXComboBox fx:id="ComboBoxState" labelFloat="true" layoutX="577.0" layoutY="153.0" prefHeight="25.0" prefWidth="216.0" promptText="Select State" style="-fx-font-weight: bold;">
+         <tooltip>
+            <Tooltip autoHide="true" text="Select State" />
+         </tooltip></JFXComboBox>
+        <ImageView fx:id="closeimgsignup" fitHeight="38.0" fitWidth="38.0" layoutX="820.0" layoutY="551.0" onMouseClicked="#closeimgClicked" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/close.png" />
+        </ImageView>
+      <JFXComboBox fx:id="ComboBoxReligion" labelFloat="true" layoutX="577.0" layoutY="198.0" prefHeight="25.0" prefWidth="216.0" promptText="Select Religion">
+         <tooltip>
+            <Tooltip text="Select Religion" />
+         </tooltip></JFXComboBox>
+      <JFXComboBox fx:id="ComboBoxCategory" labelFloat="true" layoutX="577.0" layoutY="245.0" prefHeight="25.0" prefWidth="216.0" promptText="Select Category">
+         <tooltip>
+            <Tooltip autoHide="true" text="Select Category" />
+         </tooltip></JFXComboBox>
+      <JFXComboBox fx:id="ComboBoxIncome" labelFloat="true" layoutX="577.0" layoutY="287.0" prefHeight="25.0" prefWidth="216.0" promptText="Select Income">
+         <tooltip>
+            <Tooltip autoHide="true" text="Select Income" />
+         </tooltip></JFXComboBox>
+      <JFXComboBox fx:id="ComboBoxEdu" labelFloat="true" layoutX="577.0" layoutY="330.0" prefHeight="25.0" prefWidth="216.0" promptText="Select Eductaion Qualification">
+         <tooltip>
+            <Tooltip autoHide="true" text="Select Eductaion Qualification" />
+         </tooltip></JFXComboBox>
+      <JFXTextField fx:id="Soccupation" focusColor="#ffce00" labelFloat="true" layoutX="577.0" layoutY="373.0" prefHeight="31.0" prefWidth="216.0" promptText="Enter Occupation" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Enter Occupation" />
+         </tooltip>
+      </JFXTextField>
+      <JFXTextField fx:id="Susername" focusColor="#ffce00" labelFloat="true" layoutX="577.0" layoutY="421.0" prefHeight="31.0" prefWidth="216.0" promptText="Set Username" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" text="Set Username" />
+         </tooltip>
+      </JFXTextField>
+      <JFXPasswordField fx:id="Spassword" focusColor="#ffce00" labelFloat="true" layoutX="577.0" layoutY="468.0" prefHeight="31.0" prefWidth="216.0" promptText="Set Password" unFocusColor="#373737">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Set Password" />
+         </tooltip>
+      </JFXPasswordField>
+      <JFXButton fx:id="SubmitButton" buttonType="RAISED" layoutX="692.0" layoutY="523.0" onMouseClicked="#SubmitButtonAction" prefHeight="31.0" prefWidth="101.0" ripplerFill="#ffce00" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="BackButtonSignUp" buttonType="RAISED" layoutX="577.0" layoutY="523.0" onMouseClicked="#BackButtonAction" prefHeight="31.0" prefWidth="101.0" ripplerFill="#ffce00" text="Back" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+        <ImageView fitHeight="135.0" fitWidth="162.0" layoutX="31.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/Signup.png" />
+        </ImageView>
+      <Label layoutX="73.0" layoutY="301.0" prefHeight="21.0" prefWidth="101.0" text="Sign Up From" textFill="#ffce00">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="ShowPassCheck" alignment="CENTER" checkedColor="#373737" contentDisplay="GRAPHIC_ONLY" layoutX="801.0" layoutY="474.0" onAction="#ShowPassAction" prefHeight="18.0" prefWidth="70.0" text="CheckBox" textFill="WHITE" unCheckedColor="#ffce00">
+         <tooltip>
+            <Tooltip text="Show Password">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </JFXCheckBox>
+      <JFXTextField fx:id="ShowPassField" focusColor="#ffce00" labelFloat="true" layoutX="577.0" layoutY="468.0" prefHeight="31.0" prefWidth="216.0" promptText="Set Password" unFocusColor="#373737" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+    </AnchorPane>
+</AnchorPane>
